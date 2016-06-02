@@ -1,0 +1,168 @@
+/*  TYPOGRAPHY  */
+
+body{
+	color: #2e2e2e;
+	font: 16px/24px "Helvetica Neue", Arial, sans-serif;
+
+}
+
+h1, h3 {
+	font-family: "Georgia", serif;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 55px;
+}
+
+h3 {
+	font-size: 32px;
+}
+
+h4 {
+	color: #5c5d60;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+p {
+	margin-bottom: 24px;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+/*  GENERAL LAYOUT RULES  */
+
+.container {
+	width: 1200px;
+	margin: 0 auto 0 auto;
+}
+
+.row {
+	overflow: hidden;
+}
+
+.column-half {
+	margin: 0 12px 24px 12px;
+	width: 576px;
+	float: left;
+}
+
+
+/* HEADER */
+
+.header-homepage {
+	background: url(../images/header-homepage.jpg) 0 0 no-repeat;
+	height: 600px;
+	background-size: 100%;
+	margin-bottom: 96px;
+}
+
+.header-portfolio {
+	background: url(../images/header-portfolio.jpg) 0 0 no-repeat;
+	height: 330px;
+	background-size: 100%;
+	margin-bottom: 96px;
+}
+
+.header-about {
+	background: url(../images/header-about.jpg) 0 0 no-repeat;
+	height: 600px;
+	background-size: 100%;
+	margin-bottom: 96px;
+}
+
+.logo {
+	float: left;
+}
+
+nav {
+	float: right;
+}
+
+	nav ul {
+		list-style-type: none;
+		margin: 0;
+	}
+
+		nav ul li {
+			display: inline;
+			margin-left: 24px;
+		}
+
+			nav ul li a {
+				color: white;
+				text-transform: uppercase;
+				font-weight: bold;
+				font-size: 14px;
+			}
+
+.top-container {
+	overflow: hidden;
+	padding: 48px 0;
+}
+
+.header-hr {
+	background-color: rgba(255, 255, 255, .1);
+	border: 0;
+	height: 1px;
+	margin-top: 0;
+	margin-bottom: 96px;
+}
+
+.header-contents {
+	text-align: center;
+	color: white;
+	padding: 0 200px;
+}
+
+	.header-contents p {
+		margin-bottom: 48px;
+	}
+
+
+/* BUTTONS */
+
+.btn {
+	display: inline-block;
+	height: 48px;
+	width: 200px;
+	color: #f2ae5d;
+	border: 1px solid #f2ae5d;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+	.btn:hover {
+		text-decoration: none;
+		background-color: #f2ae5d;
+		color: #2e2e2e;
+	}
+
+
+/* FOOTER */
+
+footer {
+	background-color: #333538;
+	padding: 24px 0;
+	margin-top: 48px;
+}
+
+	footer p {
+		color: white;
+	}
+
+form input [type="email"] {
+	border: none;
+	height: 48px;
+	width: 365px;
+	padding: 0 12px;
+}

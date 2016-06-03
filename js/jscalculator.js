@@ -1,13 +1,9 @@
-alert('test1');
-
 var ans = "";
 var clear = false;
 var calc = "";
 
 $(document).ready(function() {
-        alert('test2');
     $("#calc_button").click(function() {
-        alert('test3');
       var text = $(this).attr("value");
       if(parseInt(text, 10) == text || text === "." || text === "/" || text === "*" || text === "-" || text === "+" || text === "%") {
         if(clear === false) {

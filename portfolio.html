@@ -9,9 +9,21 @@
 <body>
 	<header class="header-portfolio">
 		<div class="container">
-		<?php
-			include 'header.php';
-		?>
+
+
+		<div class="top-container">
+			<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+			<nav>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="portfolio.html">PROJECTS</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+				</ul>
+			</nav>
+		</div>
+		<hr class="header-hr">
+
+
 			<div class="header-contents">
 				<h1>My Projects</h1>
 			</div>
@@ -22,7 +34,7 @@
 			<div class="sidebar">
 				<h4>My Web-Projects</h4>
 				<ul>
-					<li><a class="active" href="portfolio.php">My JS-Calculator</a></li>
+					<li><a class="active" href="portfolio.html">My JS-Calculator</a></li>
 					<li><a href="#">Another Project</a></li>
 					<li><a href="#">A great Project</a></li>
 					<li><a href="#">My fourth Project</a></li>
@@ -64,9 +76,40 @@
 	</div>
 
 
-<?php
-	include 'footer.php';
-?>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="column-half">
+					<h4>Subscribe to newsletter</h4>
+					<p>Wanna stay up-to-date with my latest projects? Enter your email below and I'll send you one 
+					email a month with the latest news.</p>
+					<form action="" method="post">
+					<input type="email" id="newsletter-email" name="newsletter-email" placeholder="email address">
+					<input type="submit" value="Subscribe" class="btn">
+					</form>
+				</div>
+
+				<div class="column-half">
+					<h4>Get in touch</h4>
+					<p>skype: nitchle</p>
+					<p>Tel.: 0666 123456789</p>
+					<p><a href="mailto:test@trash-mail.com">E-MAIL</a>
+					</p>
+					<ul class="social">
+						<li><a href="#"><img src="images/icon-twitter.png" alt="Twitter"></a></li>
+						<li><a href="#"><img src="images/icon-facebook.png" alt="Facebook"></a></li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+
+	</footer>
+
+	<div class="copyright">
+		<p>&copy; 2016 test</p>
+	</div>
+
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script type="text/javascript" src="js/jscalculator.js"></script>

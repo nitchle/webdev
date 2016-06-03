@@ -1,5 +1,4 @@
 /*  TYPOGRAPHY  */
-
 body{
 	color: #2e2e2e;
 	font: 16px/24px "Helvetica Neue", Arial, sans-serif;
@@ -30,19 +29,20 @@ p {
 }
 
 a{
+	color: #f46151;
 	text-decoration: none;
 }
 
-a:hover {
-	text-decoration: underline;
-}
+	a:hover {
+		text-decoration: underline;
+	}
 
 
-/*  GENERAL LAYOUT RULES  */
 
+/* GENERAL LAYOUT RULES */
 .container {
 	width: 1200px;
-	margin: 0 auto 0 auto;
+	margin: 0 auto;
 }
 
 .row {
@@ -56,8 +56,15 @@ a:hover {
 }
 
 
-/* HEADER */
+.container-center {
+	margin: 0 auto 96px auto;
+	width: 600px;
+	text-align: center; 
+}
 
+
+
+/* HEADER */
 .header-homepage {
 	background: url(../images/header-homepage.jpg) 0 0 no-repeat;
 	height: 600px;
@@ -74,7 +81,7 @@ a:hover {
 
 .header-about {
 	background: url(../images/header-about.jpg) 0 0 no-repeat;
-	height: 600px;
+	height: 330px;
 	background-size: 100%;
 	margin-bottom: 96px;
 }
@@ -82,6 +89,10 @@ a:hover {
 .logo {
 	float: left;
 }
+
+	.logo img {
+		width: 200px;
+	}
 
 nav {
 	float: right;
@@ -131,6 +142,7 @@ nav {
 /* BUTTONS */
 
 .btn {
+	font-size: 18px;
 	display: inline-block;
 	height: 48px;
 	width: 200px;
@@ -160,9 +172,59 @@ footer {
 		color: white;
 	}
 
-form input [type="email"] {
+form input[type="email"] {
 	border: none;
 	height: 48px;
-	width: 365px;
+	width: 350px;
 	padding: 0 12px;
 }
+
+form input[type="submit"] {
+	background-color: transparent;
+	height: 48px;
+	padding: 0 12px;
+	margin-left: 12px;
+}
+
+.social {
+	list-style-type: none;
+	padding: 0;
+}
+
+	.social li {
+		display: inline;
+		margin-right: 12px;
+	}
+
+.copyright {
+	padding: 48px 0;
+	text-align: center;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+	width: 400px;
+	float: left;
+	margin-right: 48px;
+}
+
+	.sidebar ul {
+		list-style-type: none;
+		padding: 0;
+	}
+
+	.sidebar ul .active a {
+		color: #2e2e2e;
+	}
+
+.main-content {
+	width: 752px;
+	float: right;
+	margin-bottom: 48px;
+}
+
+	.main-content img {
+		margin-bottom: 24px;
+		
+	}

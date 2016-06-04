@@ -1,11 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>About</title>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-</head>
-<body>
+{% extends 'master.html' %}
+
+{% block title %}About{% endblock %}
+
+
+{% block head %}
+	{% parent %}
+{% endblock %}
+
+
+
+{% block content %}
 
 	<header class="header-about">
 		<div class="container">
@@ -74,7 +78,4 @@
 		<p>&copy; 2016 test</p>
 	</div>
 
-
-
-</body>
-</html>
+{% endblock %}

@@ -1,15 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Nikolaus Spindler - Sichere Web-Entwicklung</title>
-	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+{% extends 'master.html' %}
 
-</head>
-<body>
+{% block title %}Nikolaus Spindler - Sichere Web-Entwicklung{% endblock %}
+
+
+{% block head %}
+	{% parent %}
+{% endblock %}
+
+
+
+{% block content %}
 
 	<header class="header-homepage">
 
@@ -51,7 +51,7 @@
 				<p>Responsive JavaScript-Online-Calcualtor which supports basic operations,
 				for demonstration and design testing.</p>
 				<p><a href="portfolio">See details &rarr;</a></p>
-			</div>	
+			</div>
 			<div class="column-half col-md-6">
 				<a href="portfolio"><img src="images/hp-portfolio-2.jpg" alt="Portfolio"></a>
 				<h3>Project Title</h3>
@@ -75,7 +75,7 @@
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				<p><a href="portfolio">See details &rarr;</a></p>
-			</div>	
+			</div>
 			<div class="column-half col-md-6">
 				<a href="portfolio"><img src="images/hp-portfolio-2.jpg" alt="Portfolio"></a>
 				<h3>Project Title</h3>
@@ -97,7 +97,7 @@
 			<div class="row">
 				<div class="column-half">
 					<h4>Subscribe to newsletter</h4>
-					<p>Wanna stay up-to-date with my latest projects? Enter your email below and I'll send you one 
+					<p>Wanna stay up-to-date with my latest projects? Enter your email below and I'll send you one
 					email a month with the latest news.</p>
 					<form action="" method="post">
 					<input type="email" id="newsletter-email" name="newsletter-email" placeholder="email address">
@@ -114,7 +114,7 @@
 					<ul class="social">
 						<li><a href="#"><img src="images/icon-twitter.png" alt="Twitter"></a></li>
 						<li><a href="#"><img src="images/icon-facebook.png" alt="Facebook"></a></li>
-					</ul>	
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -125,10 +125,7 @@
 		<p>&copy; 2016 test</p>
 	</div>
 
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-</body>
-</html>
+{% endblock %}

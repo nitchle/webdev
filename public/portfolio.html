@@ -1,12 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>My Projects</title>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+{% extends 'master.html' %}
+
+{% block title %}My Projects{% endblock %}
+
+
+{% block head %}
+	{% parent %}
 	<link rel="stylesheet" type="text/css" href="css/jscalculator.css">
-</head>
-<body>
+{% endblock %}
+
+
+
+{% block content %}
+
 	<header class="header-portfolio">
 		<div class="container">
 
@@ -109,9 +114,7 @@
 		<p>&copy; 2016 test</p>
 	</div>
 
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script type="text/javascript" src="js/jscalculator.js"></script>
-</body>
-</html>
+
+{% endblock %}

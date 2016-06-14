@@ -2,38 +2,28 @@
 
 {% block title %}My Projects{% endblock %}
 
-
 {% block head %}
 	{% parent %}
 	<link rel="stylesheet" type="text/css" href="css/jscalculator.css">
 {% endblock %}
 
+{% block bodyheader %}
+		<header class="header-portfolio">
+{% endblock %}
 
+{% block navigation %}
+	{% parent %}
+{% endblock %}
+
+{% block header-contents %}
+		<div class="header-contents">
+			<h1>My Projects</h1>
+		</div>
+	</div>
+	</header>
+{% endblock%}
 
 {% block content %}
-
-	<header class="header-portfolio">
-		<div class="container">
-
-
-		<div class="top-container">
-			<a href="index" class="logo"><img src="images/logo.png" alt=""></a>
-			<nav>
-				<ul>
-					<li><a href="index">HOME</a></li>
-					<li><a href="portfolio">PROJECTS</a></li>
-					<li><a href="about">ABOUT</a></li>
-				</ul>
-			</nav>
-		</div>
-		<hr class="header-hr">
-
-
-			<div class="header-contents">
-				<h1>My Projects</h1>
-			</div>
-		</div>
-	</header>
 	<div class="container">
 		<div class="row">
 			<div class="sidebar">
@@ -86,7 +76,7 @@
 			<div class="row">
 				<div class="column-half">
 					<h4>Subscribe to newsletter</h4>
-					<p>Wanna stay up-to-date with my latest projects? Enter your email below and I'll send you one 
+					<p>Wanna stay up-to-date with my latest projects? Enter your email below and I'll send you one
 					email a month with the latest news.</p>
 					<form action="" method="post">
 					<input type="email" id="newsletter-email" name="newsletter-email" placeholder="email address">
@@ -103,7 +93,7 @@
 					<ul class="social">
 						<li><a href="#"><img src="images/icon-twitter.png" alt="Twitter"></a></li>
 						<li><a href="#"><img src="images/icon-facebook.png" alt="Facebook"></a></li>
-					</ul>	
+					</ul>
 				</div>
 			</div>
 		</div>

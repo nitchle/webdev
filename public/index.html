@@ -2,47 +2,35 @@
 
 {% block title %}Nikolaus Spindler - Sichere Web-Entwicklung{% endblock %}
 
-
 {% block head %}
+	{% parent %}
+
+{% endblock %}
+
+{% block bodyheader %}
+	<header class="header-homepage">
+{% endblock %}
+
+{% block navigation %}
 	{% parent %}
 {% endblock %}
 
-
-
-{% block content %}
-
-	<header class="header-homepage">
-
-	<div class="container">
-
-	<div class="top-container">
-		<a href="index" class="logo"><img src="images/logo.png" alt=""></a>
-		<nav>
-			<ul>
-				<li><a href="index">HOME</a></li>
-				<li><a href="portfolio">PROJECTS</a></li>
-				<li><a href="about">ABOUT</a></li>
-			</ul>
-		</nav>
-	</div>
-	<hr class="header-hr">
-
+{% block header-contents %}
 		<div class="header-contents">
 			<h1>Sichere WEB-Entwicklung</h1>
-
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
 			<p><a href="portfolio" class="btn">See Details</a></p>
 		</div>
 	</div>
-
 	</header>
+{% endblock %}
 
+{% block content %}
 	<div class="container">
 		<div class="row">
 			<div class="column-half col-md-6">
@@ -89,8 +77,6 @@
 			</div>
 		</div>
 	</div>
-
-
 
 	<footer>
 		<div class="container">

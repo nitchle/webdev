@@ -1,0 +1,6 @@
+
+routing für / funktioniert nicht - index und alle anderen schon.
+
+entfernen eines blocks ... zb footer bewirkt keine änderung.
+
+beim anklicken eines buttons vom calculator wird die click-function nicht aufgerufen, nur beim ersten ... AC

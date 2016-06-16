@@ -3,7 +3,9 @@ var clear = false;
 var calc = "";
 
 $(document).ready(function() {
+
     $("#calc_button").click(function() {
+      alert('test');
       var text = $(this).attr("value");
       if(parseInt(text, 10) == text || text === "." || text === "/" || text === "*" || text === "-" || text === "+" || text === "%") {
         if(clear === false) {

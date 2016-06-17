@@ -5,12 +5,12 @@ var express = require('express');
 // This is where all the magic happens!
 app.engine('html', swig.renderFile);
 app.set('view engine', 'html');
-app.set('views', __dirname + '/public');
+app.set('views', __dirname + '/views');
 
-app.use(express.static('public'));
-app.use(express.static('public/css'));
-app.use(express.static('public/images'));
-app.use(express.static('public/js'));
+app.use(express.static('public/'));
+//app.use(express.static('public/css'));
+//app.use(express.static('public/images'));
+//app.use(express.static('public/js'));
 
 // Swig will cache templates for you, but you can disable
 // that and use Express's caching instead, if you like:

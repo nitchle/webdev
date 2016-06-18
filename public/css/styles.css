@@ -41,7 +41,6 @@ a{
 
 /* GENERAL LAYOUT RULES */
 .container {
-	width: 1200px;
 	margin: 0 auto;
 }
 
@@ -55,14 +54,11 @@ a{
 	float: left;
 }
 
-
 .container-center {
 	margin: 0 auto 96px auto;
 	width: 600px;
-	text-align: center; 
+	text-align: center;
 }
-
-
 
 /* HEADER */
 .header-homepage {
@@ -226,5 +222,5 @@ form input[type="submit"] {
 
 	.main-content img {
 		margin-bottom: 24px;
-		
+
 	}
